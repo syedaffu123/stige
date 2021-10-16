@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stige</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="navbar">
+
+    <h1 style="font-size: 45px;"><a href="/">stige</a></h1></div>
+    <ul>
+      <% if (user) { %>
+        
+          <div class="navbarlog">
+        <li> Welcome, <%= user.email %></li></div>
+        <div class="navbarsign">
+        <li><a href="/logout" style='color: white;'>Log out</a></li></div>
+      
+      <% } else { %>
+        <div class="navbarlog">
+        <li><a style ="color: white ;" href="/tracks">Tracks</a></li>
+        
+
+      </div>
+        <div class="navbarsign">
+        <li><a href="/login" style="color: white;">Log In/Sign Up</a></li></div>
+      <% } %>
+    </ul>
+    </div>
+  </nav>
+  
+  
+  
